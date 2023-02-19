@@ -17,7 +17,8 @@ const Container = styled.div`
   flex-direction: column;
   flex-basis: 45%;
   overflow: hidden;
-  padding: 1em 3em;
+  transform: scale(1.2);
+  padding: 3em 3em;
   //flex-shrink: 0;
 `;
 

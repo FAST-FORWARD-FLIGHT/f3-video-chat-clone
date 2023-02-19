@@ -22,7 +22,6 @@ const Header = () => {
       </Container>
       {question && <HeaderQuestionToggle />}
     </>
-
   );
 };
 
@@ -60,6 +59,7 @@ const STImgLogo = styled.img`
 
 //STBoxTimeBtn
 const STBoxTimeBtn = styled.div`
+  transform: scale(1.2);
   position: relative;
   display: flex;
   align-items: center;
@@ -81,7 +81,7 @@ const LoginBtn = styled.div`
   box-sizing: border-box;
   height: 48px;
   line-height: normal;
-  padding: 0 4px;
+  padding: 4px 4px;
   padding-left: 30px;
   flex-grow: 0;
   flex-shrink: 0;
