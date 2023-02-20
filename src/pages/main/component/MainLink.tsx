@@ -17,12 +17,13 @@ const MainLink: React.FC = () => {
   );
 };
 const Container = styled.div`
+  transform: scale(1.2);
   display: inline-flex;
   flex-basis: 35rem;
   flex-direction: column;
   //flex-shrink: 0;
   max-width: 35rem;
-  padding: 1em 3em;
+  padding: 3em 3em;
 `;
 
 const Title = styled.div`

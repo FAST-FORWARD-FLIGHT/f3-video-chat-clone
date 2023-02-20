@@ -57,7 +57,7 @@ const MainBtn = () => {
     <Container>
       <CreateBtn onClick={() => onClickAddBtn()}>
         <MdOutlineVideoCall
-          style={{ marginRight: "0.5rem", width: "20px", height: "20px" }}
+          style={{ marginRight: "0.5rem", width: "25px", height: "25px" }}
         />
         새 회의
       </CreateBtn>
