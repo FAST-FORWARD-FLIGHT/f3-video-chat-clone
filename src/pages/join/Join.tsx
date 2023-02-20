@@ -53,7 +53,6 @@ const Join = () => {
       </Head>
       <Body>
         <CameraArea>
-          {/* <Text>카메라가 꺼져 있음</Text> */}
           <Stream
             audio={audio}
             setAudio={setAudio}
