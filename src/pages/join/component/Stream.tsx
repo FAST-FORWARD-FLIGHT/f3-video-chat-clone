@@ -77,7 +77,7 @@ const Stream: React.FC<VideoProps> = ({ audio, setAudio, video, setVideo }) => {
         }}
       ></Video>
       <Icon>
-        <Mic>
+        <div>
           {audio ? (
             <IoMicOffOutline
               onClick={onClickAudioBtn}
@@ -87,8 +87,8 @@ const Stream: React.FC<VideoProps> = ({ audio, setAudio, video, setVideo }) => {
           ) : (
             <IoMicOutline onClick={onClickAudioBtn} color="red" size="50px" />
           )}
-        </Mic>
-        <Cam>
+        </div>
+        <div>
           {video ? (
             <IoVideocamOffOutline
               onClick={onClickVideoBtn}
@@ -102,7 +102,7 @@ const Stream: React.FC<VideoProps> = ({ audio, setAudio, video, setVideo }) => {
               size="50px"
             />
           )}
-        </Cam>
+        </div>
       </Icon>
     </Container>
   );
@@ -126,7 +126,3 @@ const Icon = styled.div`
   text-align: center;
   align-items: center;
 `;
-
-const Mic = styled.button``;
-
-const Cam = styled.button``;

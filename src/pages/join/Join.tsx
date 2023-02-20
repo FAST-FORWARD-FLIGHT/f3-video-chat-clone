@@ -53,7 +53,6 @@ const Join = () => {
       </Head>
       <Body>
         <CameraArea>
-          {/* <Text>카메라가 꺼져 있음</Text> */}
           <Stream
             audio={audio}
             setAudio={setAudio}
@@ -63,7 +62,10 @@ const Join = () => {
         </CameraArea>
         <Box>
           <div>참여할 준비가 되셨나요?</div>
-          <JoinBtn onClick={onClickJoinBtn}>참여하기</JoinBtn>
+          <BtnBox>
+            <JoinBtn onClick={onClickJoinBtn}>지금 참여하기</JoinBtn>
+            <ScreenBtn>발표하기</ScreenBtn>
+          </BtnBox>
         </Box>
       </Body>
     </Container>
@@ -112,19 +114,28 @@ const Box = styled.div`
   font-weight: 350;
   font-size: 20px;
   color: #2a2a2a;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.25rem;
 `;
 
 const JoinBtn = styled.button`
   outline: 0;
-  background: rgb(55, 55, 251);
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.0107142857em;
+  font-weight: 500;
+  background: rgb(26, 115, 232);
   color: white;
-  width: 90px;
-  height: 45px;
+  width: 150px;
+  height: 60px;
   border: 0;
   margin: 0 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 1.1rem;
   border-radius: 30px;
   margin: 20px;
   box-shadow: 2px 2px 2px lightgray;
@@ -150,4 +161,25 @@ const Text = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
+`;
+
+const ScreenBtn = styled.button`
+  margin: 20px;
+  padding: 15px;
+  color: #1a73e8;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.0107142857em;
+  font-weight: 500;
+  text-transform: none;
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%),
+    0 1px 5px 0 rgb(0 0 0 / 12%);
+`;
+const BtnBox = styled.div`
+  display: flex;
+  width: 400px;
+  justify-content: center;
 `;
